@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sign up</title>
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/signup.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="navigation">
+          <li><a href="./Home.html">Home</a></li>
+          <li><a href="./menu.html">Menu</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./Reservations.html">Reservations</a></li>
+          <li><a href="./Contact.html">Contact Us</a></li>
+          <li>
+            <button><a href="./login.html">log In</a></button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="signup-form">
+        <form id="signup-form">
+          <h2>Signup</h2>
+          <label for="signup-username">Username:</label>
+          <input type="text" id="signup-username" required>
+
+          <label for="signup-password">Password:</label>
+          <input type="password" id="signup-password" required>
+
+          <button type="submit" onclick="signup()">Signup</button>
+        </form>
+      </div>
+      <script src="../server/index.js"></script>
+      <script src="./js/user_authentication.js"></script>
+    </main>
+  </body>
+</html>

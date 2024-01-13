@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservation System</title>
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/reservation_system.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="navigation">
+          <li><a href="./Home.html">Home</a></li>
+          <li><a href="./menu.html">Menu</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./Reservations.html">Reservations</a></li>
+          <li><a href="./Contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1>Reservation System</h1>
+    <main>
+    <div class="reservation-form">
+      <label for="date">Select Date:</label>
+      <input type="date" id="date" />
+      <label for="time">Select Time:</label>
+      <input type="time" id="time" />
+      <button onclick="checkAvailability()">Check Availability</button>
+      <div id="availability-message"></div>
+      <button onclick="confirmReservation()">Confirm Reservation</button>
+    </div>
+  </main>
+    <script src="./js/reservation_system.js"></script>
+  </body>
+</html>
