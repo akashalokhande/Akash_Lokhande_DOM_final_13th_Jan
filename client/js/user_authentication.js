@@ -59,7 +59,7 @@ function login() {
     
           }else{
             // alert(data.message)
-            window.location.assign("Home.html")
+            window.location.assign("menu.html")
           }
       // Handle success (e.g., store tokens in localStorage)
     })
