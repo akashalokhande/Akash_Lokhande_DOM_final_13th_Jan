@@ -25,7 +25,8 @@ function signup() {
         alert(data.error)
 
       }else{
-        alert(data.message)
+        // alert(data.message)
+        window.location.assign("login.html")
       }
 
       // Handle success
