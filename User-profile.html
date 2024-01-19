@@ -11,28 +11,29 @@
     <header>
       <nav>
         <ul class="navigation">
-          <li><a href="./Home.html">Home</a></li>
           <li><a href="./menu.html">Menu</a></li>
-          <li><a href="./about.html">About Us</a></li>
           <li><a href="./Reservations.html">Reservations</a></li>
-          <li><a href="./Contact.html">Contact Us</a></li>
+          <li>
+            <button><a href="./Home.html">Logout</a></button>
+          </li>
         </ul>
       </nav>
     </header>
     <main>
-      <div class="profile">
-        <div class="profile-picture">
-          <img src="./css/images/images (1).jpg" alt="Profile Picture" />
+      <div class="container">
+        <div class="loader-container">
+          <div class="loader"></div>
+          <p>Loading user...</p>
         </div>
-        <div class="profile-info">
-          <h1>Michelle Lee</h1>
-          <p>Email: user@example.com</p>
-          <p>Location: City, Country</p>
+        <div class="user-container" style="display: none">
+          <img class="avatar" alt="User Avatar" />
+          <h2 class="username"></h2>
+          <p class="email"></p>
         </div>
-        <div class="resver-slot">
-          <h1>Your Reservation</h1>
-          <div id="confirmed-reservation"></div>
-        </div>
+      </div>
+      <div class="reservation-list">
+        <h1>Your Reservations</h1>
+        <p id="reservationList"></p>
       </div>
     </main>
     <script src="./js/user_profile.js"></script>

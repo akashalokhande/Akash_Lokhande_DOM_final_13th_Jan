@@ -5,41 +5,63 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
+  margin: 0;
   background-color: #f4f4f4;
 }
 
-.profile {
+.container {
+  text-align: center;
+}
+
+.loader-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  margin-top: 50px;
+  align-items: center;
 }
 
-.profile-picture img {
-  width: 150px;
-  height: 150px;
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
   border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 20px;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
 }
 
-.profile-info {
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.user-container {
+  margin-top: 20px;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.username {
+  margin-top: 10px;
+}
+
+.email {
+  color: #888;
+}
+
+.reservation-list {
   text-align: center;
-}
-
-.profile-info h1 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.profile-info p {
-  font-size: 16px;
-  margin-bottom: 8px;
-  color: #666;
-}
-
-.resver-slot {
-  text-align: center;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }

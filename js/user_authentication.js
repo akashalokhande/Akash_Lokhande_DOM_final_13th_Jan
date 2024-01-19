@@ -48,6 +48,8 @@ async function login() {
       loginmsg.style.color = "green";
       loginmsg.textContent = "Login successful!";
       window.location.href = 'menu.html'
+      let randomNumber = Math.floor(Math.random() * 10) + 1;
+      localStorage.setItem('userno',randomNumber)
     } else {
       loginmsg.style.color = "red";
       loginmsg.textContent = "invalid credentials!";
