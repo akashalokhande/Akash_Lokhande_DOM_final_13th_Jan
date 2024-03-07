@@ -13,7 +13,7 @@
               <h2>${item.dish_name}</h2>
               <img src="${item.image}" alt="" style="width: 300px;height: 200px;">
               <p>${item.description}</p>
-              <p>Price: $${item.price.toFixed(2)}</p>
+              <p>Price: ₹${item.price.toFixed(0)*80}</p>
               <p>${item.category}</p>
             `;
               menuContainer.appendChild(menuItemDiv);
