@@ -7,8 +7,7 @@
           .then((response) => response.json())
           .then((menuItems) => {
             menuItems.menu.forEach((item) => {
-              document.querySelector('.loader-wrapper').style.display = 'none'+
-              9
+              document.querySelector('.loader-wrapper').style.display = 'none'
               const menuItemDiv = document.createElement("div");
               menuItemDiv.className = "menu-item";
               menuItemDiv.innerHTML = `
