@@ -26,12 +26,15 @@
     <main>
       <div class="reservation-form">
         <h1>Reservation System</h1>
+        <div style="display: flex;padding:10px 0;">
         <label for="date">Select Date:</label>
         <input type="date" id="date" required />
-
+      </div>
+      <div style="display: flex;">
         <label for="time">Select Time:</label>
         <input type="time" id="time" required />
-        <p id="availability-message"></p>
+      </div>
+        <p id="availability-message" style="padding-top:10px;"></p>
         <button class="btn" onclick="checkAvailability()">
           Check Availability
         </button>
