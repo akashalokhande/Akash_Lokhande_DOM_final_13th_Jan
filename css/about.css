@@ -1,62 +1,66 @@
-
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: #f8f8f8;
-    padding: 20px;
-    text-align: center;
-  }
-  
- 
-  
-  section {
-    padding: 20px;
-    margin-bottom: 20px;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+}
+
+section {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  padding-top: 1rem;
+}
+h2 {
+  color: #333;
+}
+
+/* Styles for specific sections */
+.history,
+.restaurant-images,
+.staff {
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.image-gallery img {
+  width: 300px;
+  height: 200px;
+}
+
+.staff-info {
+  display: flex;
+  justify-content: space-around;
+}
+
+.staff-member {
+  text-align: center;
+}
+
+.staff-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 768px) {
   h2 {
-    color: #333;
+    padding: 1rem;
   }
-  
-  /* Styles for specific sections */
-  .history,
-  .restaurant-images,
-  .staff {
-    background-color: #fff;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .image-gallery {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-  
-  .image-gallery img {
-    width: 300px;
-    height: 200px;
-  }
-  
-  .staff-info {
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .staff-member {
-    text-align: center;
-  }
-  
-  .staff-member img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-  
-  
+}
