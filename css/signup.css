@@ -1,7 +1,5 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
   overflow-y: hidden;
 }
 
@@ -12,8 +10,6 @@ main {
   height: 88vh;
   background-color: #f4f4f4;
 }
-
-
 
 .container {
   display: flex;
@@ -27,8 +23,8 @@ main {
   margin: 10px;
 }
 
-.signup-heading{
-  padding:1.2rem 0;
+.signup-heading {
+  padding: 1.2rem 0;
 }
 
 label {
