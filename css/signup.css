@@ -27,6 +27,10 @@ main {
   margin: 10px;
 }
 
+.signup-heading{
+  padding:1.2rem 0;
+}
+
 label {
   display: block;
   margin-bottom: 8px;
